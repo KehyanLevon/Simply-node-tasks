@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const directoryPath = process.argv[2] || process.cwd();
-console.log(process.cwd())
+
 fs.readdir(directoryPath, (err, files) => {
     if (err) {
         console.error('Error reading directory:', err);
